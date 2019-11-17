@@ -1,0 +1,7 @@
+#Mon Nov 18 00:05:15 PKT 2019
+base.0=C\:\\Git\\Assignment4_modules\\Assignment4\\Home Screen\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Git\\Assignment4_modules\\Assignment4\\Home Screen\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
