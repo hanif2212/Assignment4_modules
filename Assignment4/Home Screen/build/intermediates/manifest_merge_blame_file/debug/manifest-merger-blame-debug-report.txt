@@ -10,38 +10,74 @@
 9        android:targetSdkVersion="29" />
 9-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\1828c85ed9aa36f74b3e881693990ce5\core-1.1.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.assignment4.MainActivity" >
-21-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:12:9-18:20
-21-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:14:17-69
-23-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:16:17-77
-25-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:4:5-78
+11-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+12-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:5:5-84
+12-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:5:22-82
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+14-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-64
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-81
+15-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-78
+16
+17    <application
+17-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:8:5-22:19
+18        android:allowBackup="true"
+18-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:9:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\1828c85ed9aa36f74b3e881693990ce5\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:10:9-43
+22        android:label="@string/app_name"
+22-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:11:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:12:9-54
+24        android:supportsRtl="true"
+24-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:13:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:14:9-40
+27        <activity android:name="com.example.assignment4.MainActivity" >
+27-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:15:9-21:20
+27-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:15:19-47
+28            <intent-filter>
+28-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:16:13-20:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:17:17-69
+29-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:17:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:19:17-77
+31-->C:\Git\Assignment4_modules\Assignment4\Home Screen\src\main\AndroidManifest.xml:19:27-74
+32            </intent-filter>
+33        </activity>
+34
+35        <service android:name="com.example.locationmodule.LocationTracking" />
+35-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-79
+35-->[:locationmodule] C:\Git\Assignment4_modules\Assignment4\locationmodule\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:18-76
+36
+37        <activity
+37-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\b4aca7768c16c739c62b34c7efb78431\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+38            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+38-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\b4aca7768c16c739c62b34c7efb78431\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+39            android:exported="false"
+39-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\b4aca7768c16c739c62b34c7efb78431\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+40            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+40-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\b4aca7768c16c739c62b34c7efb78431\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+41
+42        <meta-data
+42-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\e5e450e3e0924813a4f8b1c3787d9748\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+43            android:name="com.google.android.gms.version"
+43-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\e5e450e3e0924813a4f8b1c3787d9748\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+44            android:value="@integer/google_play_services_version" />
+44-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Noyan\.gradle\caches\transforms-2\files-2.1\e5e450e3e0924813a4f8b1c3787d9748\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+45    </application>
+46
+47</manifest>

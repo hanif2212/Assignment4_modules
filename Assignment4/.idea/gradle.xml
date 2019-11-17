@@ -12,6 +12,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Home Screen" />
+            <option value="$PROJECT_DIR$/geofencemodule" />
+            <option value="$PROJECT_DIR$/locationmodule" />
             <option value="$PROJECT_DIR$/roomdatabase" />
           </set>
         </option>
