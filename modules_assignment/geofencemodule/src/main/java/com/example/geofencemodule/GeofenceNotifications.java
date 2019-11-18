@@ -51,12 +51,12 @@ public class GeofenceNotifications extends BroadcastReceiver {
 
             // Send notification and log the transition details.
             //sendNotification(geofenceTransitionDetails);
-            showNotification(context,"Geofence","Welcome to FAST",intent);
+            pushNotification(context,"Geofence","Welcome to FAST",intent);
             String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
             String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
             dataBase.insert_places_visits("FAST",currentDate,currentTime,"checkin","Welcome to FAST");
 
-            Log.i(TAG, "Welcome to FAST");
+            Log.i(TAG, "checkIn from FAST entered in database");
         }
         else if(geofenceTransition == Geofence.GEOFENCE_TRANSITION_EXIT){
             List<Geofence> triggeringGeofences = geofencingEvent.getTriggeringGeofences();
@@ -65,13 +65,13 @@ public class GeofenceNotifications extends BroadcastReceiver {
 
             // Send notification and log the transition details.
             //sendNotification(geofenceTransitionDetails);
-            showNotification(context,"Geofence","See you soon",intent);
+            pushNotification(context,"Geofence","See you soon",intent);
             String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
             String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
             dataBase.insert_places_visits("FAST",currentDate,currentTime,"checkout","See you soon");
 
 
-            Log.i(TAG, "See you Soon");
+            Log.i(TAG, "checkout from FAST entered in database");
         }
         else {
             // Log the error.
@@ -79,7 +79,7 @@ public class GeofenceNotifications extends BroadcastReceiver {
         }
         dataBase=null;
     }
-    public void showNotification(Context context, String title, String body, Intent intent) {
+    public void pushNotification(Context context, String title, String body, Intent intent) {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         int notificationId = 1;
