@@ -1,0 +1,6 @@
+rootProject.name='modules_assignment'
+include ':Home Screen'
+include ':roomdatabase'
+include ':locationmodule'
+include ':geofencemodule'
+include ':screentime'
